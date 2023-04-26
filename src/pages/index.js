@@ -1,12 +1,17 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Header from '@components/header';
-const inter = Inter({ subsets: ['latin'] })
+import GifPage from '@containers/GifPage.jsx'
+import Header from '@components/header'
+import styles from '@styles/main.module.scss'
+
+
+
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <div className={styles.Content}>
+        <GifPage />
+      </div>
     </>
     
   )
