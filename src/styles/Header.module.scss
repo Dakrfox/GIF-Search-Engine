@@ -1,0 +1,22 @@
+@import "vars";
+
+.header{
+    height: 60px;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid $--prussian-blue;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 40px;
+
+
+}
+
+.search_input{
+    display: none;
+}
+
