@@ -13,7 +13,7 @@ export default function Header() {
             </div>
             <div className="search">
                 <span className="search_icon">
-                    <Image src={search_icon} width={20} height={20} alt="search"/>
+                    <Image src={search_icon} width={30} height={30} alt="search"/>
                 </span>
                 <div className={styles.search_input}>
                     <input type="text" placeholder="Search"/>
