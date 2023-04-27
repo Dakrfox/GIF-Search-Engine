@@ -50,3 +50,30 @@
     fill: #FFF;
 
 }
+
+@media (max-width: 768px) {
+    .content-footer{
+        display: inline-block;
+    }
+    .title h2{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+       
+    }
+    .grid-left, .grid-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding: 2% 3%;
+    }
+    .grid-left{
+        padding: 2% 10%;
+    }
+    .text{
+        max-width: 300px ;
+    }
+}
