@@ -14,7 +14,7 @@ export default function Footer() {
             </div>
             <div className={styles["content-footer"]}>
                 <div className={styles["grid-left"]}>
-                    <p>Introducing my GIF search engine,
+                    <p className={styles.text}>Introducing my GIF search engine,
                         a dynamic web application designed 
                         to provide users with a seamless and 
                         engaging way to discover and 
