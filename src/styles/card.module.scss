@@ -1,11 +1,11 @@
 @import "vars";
 
 .card{
-    border: 1px solid $--pale-conflower-blue;
+    border: 1px solid $--gainsborg;
     border-radius: $--radius-border;
     display: grid;
     grid-template-rows: 1fr auto;
-    background-color: rgba($color: $--navy, $alpha: .3);
+    background-color: rgba($color: $--nero, $alpha: .3);
 }
 .gif{
     display: flex;
@@ -21,11 +21,13 @@
     max-width: 100%;
 }
 .keywords{
+    padding-top: 10px;
+    padding-bottom: 10px;
     grid-row: 2;
     color: #fff;
     text-align: center;
 }
 .keywords span{
-    color: $--pale-conflower-blue;
+    color: $--gainsborg;
 }
 

@@ -4,6 +4,7 @@ import styles from "@styles/GifPage.module.scss";
 import { document } from "postcss";
 import { useEffect } from "react";
 import data from "../data.mjs"
+import Link from "next/link.js";
 
 export default function GifPage() { 
 
@@ -36,7 +37,11 @@ export default function GifPage() {
 
             <div className={styles.content}>
                 <div className={"grid gap-4 grid-cols-5 grid-rows-3"} id="grid">
-                    { data.map(item => <Card key={item.id} item={item} />) }
+                    { data.map(item => 
+                    <Link href="/detailedGif">
+                        <Card key={item.id} item={item} />
+                    </Link>
+                    ) }
                 </div>
             </div>
             

@@ -1,9 +1,10 @@
 @import "vars";
 
 .footer-container{
+    margin-top: 30px;
     display: grid;
     grid-template-rows: 60px 1fr 20px;
-    background: $--prussian-blue ;
+    background: $--black ;
     padding-top: 30px;
 }
 .title{
