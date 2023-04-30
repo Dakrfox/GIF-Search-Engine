@@ -1,0 +1,28 @@
+@import "vars";
+
+.container{
+    border-radius: $--radius-border;
+    background-color: $--black;
+    padding:  30px 20px;
+    color: #fff;
+    
+    width: 90%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+.container p{
+    margin: 15px;
+}
+
+@media (max-width:350px) {
+    .container{
+        padding: 15px 10px;
+    }
+}
+

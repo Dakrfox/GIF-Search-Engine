@@ -1,0 +1,112 @@
+@import "vars";
+
+
+.title{
+    margin-top: 8% ;
+    text-align: center;
+    color: #fff;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 10% 10% 10%
+}
+.content{
+    width: 100%;
+    padding: 30px;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.middle{
+        height: 60px;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: $--black;
+        color: #fff;
+        border-radius: 50px;
+    }
+
+
+.middle{
+    width: 100px;
+    height: 300px;
+    background-color: $--black;
+    color: #fff;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.icons_container{
+    width: 100%;
+    background-color: $--gainsborg;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:$--black;
+}
+
+
+@media (max-width: 768px){
+    .main-container{
+        display: inline-block;
+    }
+    .right{
+        margin-top: 30px;
+    }
+    .middle{
+        height: 60px;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: $--black;
+        color: #fff;
+        border-radius: 50px;
+        flex-direction: row;
+    }
+    .icons_container{
+        height: 40px;
+        width: 40px;
+        background-color: $--gainsborg;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$--black;
+        box-sizing: border-box;
+        
+    }
+}
+@media (max-width:350px) {
+    .right{
+        padding: 0;
+        justify-content: center;
+    }
+    .main-container{
+        padding: 0;
+    }
+    .middle{
+        margin-left: 15px;
+        margin-right: 15px;
+        width: auto;
+    }
+}
