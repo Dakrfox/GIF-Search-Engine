@@ -1,13 +1,14 @@
 import Card from "@components/card";
-import Header from "@components/header";
 import styles from "@styles/GifPage.module.scss";
-import { document } from "postcss";
 import { useEffect } from "react";
-import data from "../data.mjs"
+import data from "../data.mjs";
 import Link from "next/link.js";
 
-export default function GifPage() { 
 
+
+
+export default function GifPage() {
+    
     useEffect(() => {
         const handleResize = () => {
             let screenWidth = window.innerWidth;
@@ -31,18 +32,17 @@ export default function GifPage() {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
-
     return (
         <>
-
             <div className={styles.content}>
                 <div className={"grid gap-4 grid-cols-5 grid-rows-3"} id="grid">
-                    { data.map(item => 
-                    <Link href="/detailedGif">
-                        <Card key={item.id} item={item} />
-                    </Link>
-                    ) }
+                    {data.map((item) => (
+                        <Link href="/detailedGif">
+                            <Card  item={item} />
+                        </Link>
+                    ))}
                 </div>
+                
             </div>
             
         </>

@@ -18,11 +18,15 @@
 }
 .container p{
     margin: 15px;
+    max-width: 300px;
 }
-
+.container a{
+    text-decoration-line: underline;
+}
 @media (max-width:350px) {
     .container{
         padding: 15px 10px;
+        margin: 15px
     }
 }
 
