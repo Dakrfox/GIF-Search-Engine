@@ -18,18 +18,7 @@ export default function Header() {
                     <h2 className="pointer">DK-GSE</h2>
                 </Link>
             </div>
-            <div className={styles.search}>
-                {(visibleSearch) ? 
-                    <div className={`${styles.search_input}`}>
-                        <input type="text" placeholder="Search"/>
-                        <button className={`${styles.search_button}`} onClick={handleSreach}>Go!</button>
-                    </div>
-                :
-                <span className={`${styles.search_icon}`}>
-                    <Image src={search_icon} width={30} height={30} alt="search" onClick={handleSreach}/>
-                </span>}
-                
-            </div>
+            
         </div>
     );
 }

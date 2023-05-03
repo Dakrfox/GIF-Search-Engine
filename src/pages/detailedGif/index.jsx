@@ -4,15 +4,15 @@ import styles from "@styles/detailedGif.module.scss"
 import share from "@icons/share-social-outline.svg"
 import download from "@icons/cloud-download-outline.svg"
 import flag from "@icons/flag-outline.svg"
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 
 
 export default function detailedGif(){
     const count = useSelector(state => state.counter)
     return(
-        <section>
-            <h2 className={styles.title}>GIF NAME</h2>
+        <section className={styles.seccion}>
+            <h2 className={styles.title}>{count.name}</h2>
             <div className={styles["main-container"]}>
                 <div className={`${styles.content} ${styles.left}`}>
                     <Image src={count.link} width={500} height={500} alt="gif"/> 
