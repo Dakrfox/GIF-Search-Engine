@@ -40,7 +40,7 @@ export default function Footer() {
                 className={styles.icon}
                 alt="linkedin"
               />{" "}
-              <a href="https://linkedin.com/in/dakrfox" target="_blank">
+              <a href="https://www.linkedin.com/in/dk-fox/" target="_blank">
                 @dk-fox
               </a>{" "}
             </li>
