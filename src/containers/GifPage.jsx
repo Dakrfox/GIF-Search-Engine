@@ -53,7 +53,7 @@ export default function GifPage() {
   }, []);
   return (
     <>
-      {showDisclaminer && <Disclaimer />}
+      
       <div className={styles.search_container}>
         <input
           type="text"
