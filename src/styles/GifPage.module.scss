@@ -1,5 +1,48 @@
+@import "vars";
+
+.search_container{
+    
+    padding: 5px 10px;
+    height: 60px;
+    margin: 20px 100px;
+    background-color: #fff;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    border-radius: $--radius-border;
+}
+.search_input{
+    padding: 0 10px;
+    font-size: $--md;
+}
+.search_icon{
+    width: 90%;
+    margin: auto;
+}
 .content{
     width: 100%;
     min-height: 1vh;
     padding: 2.5% 10%;   
+}
+.no_results{
+    font-size: 40px;
+    color: $--gainsborg;
+}
+@media (max-width: 471px){
+    .search_container{
+        margin: 20px 40px;
+    }
+}
+@media (max-width: 351px){
+    .search_container{
+        margin: 30px;
+    }
+    .search_icon{
+        width: 70%;
+    }
+}
+@media (max-width: 320px){
+    .search_icon{
+        display: none;
+    }
 }

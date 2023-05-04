@@ -1,22 +1,36 @@
 @import "vars";
 
-.header{
+.header {
     height: 60px;
     max-width: 100%;
     margin: 20px;
-    border: 3px solid $--pale-conflower-blue;
+    border: 2px solid $--charcoat;
     border-radius: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
     padding: 0 40px;
-    background: rgba(0, 1, 55, 0.15);
+    background: rgba($--black, 0.15);
     color: #fff;
 
 }
+.search{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
 
-.search_input{
-    display: none;
+.search_input input{
+    color: #000;
+    padding: 5px 7px;
+    background: rgba(255,255,255,1);
+    margin-right: 20px;
+    border-radius: $--radius-border;
+}
+.search_button{
+    border: 1px solid $--gainsborg;
+    padding: 2px 15px;
+    border-radius: $--radius-border;
 }
 
