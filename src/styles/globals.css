@@ -13,5 +13,9 @@ h2{
 .pointer{
   cursor: pointer;
 }
-
+@media (max-width: 768px){
+  body{
+    background: linear-gradient( #1c1c1c 50.1%, #010101 190.21%) ;
+  }
+}
 

@@ -13,7 +13,9 @@ export default function GifPage() {
         setInputValue(event.target.value)
     }
     const dataFiltered = (inputValue === "") ? data 
-    : data.filter(item => item.name.toLowerCase().includes(inputValue.toLowerCase()))
+    : data.filter(item => 
+    item.name.toLowerCase().includes(inputValue.toLowerCase()) || 
+    item.keywords.join(" ").toLowerCase().includes(inputValue.toLowerCase()))
     
     useEffect(() => {
         const handleResize = () => {
@@ -40,7 +42,7 @@ export default function GifPage() {
     return (
         <>
             <div className={styles.search_container}>
-                <input type="text" name="search" placeholder="Search for a GIF" id="search_input" className={styles.search_input} onChange={handleSearchInput}/>
+                <input type="text" name="search" placeholder="Search for a GIF (example: funny -  reaction - happy)" id="search_input" className={styles.search_input} onChange={handleSearchInput}/>
                 <Image src={search_icon} alt="search_icon" width={20} height={20} className={styles.search_icon}/>
             </div>
             <div className={styles.content}>
@@ -52,7 +54,6 @@ export default function GifPage() {
                     ))}
                 </div>
             </div>
-            <p>{inputValue}</p>
         </>
     );
 }

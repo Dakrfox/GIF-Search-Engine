@@ -18,7 +18,6 @@
 .search_icon{
     width: 90%;
     margin: auto;
-    cursor: pointer;
 }
 .content{
     width: 100%;
@@ -36,5 +35,10 @@
     }
     .search_icon{
         width: 70%;
+    }
+}
+@media (max-width: 320px){
+    .search_icon{
+        display: none;
     }
 }
