@@ -52,6 +52,7 @@ export default function GifPage() {
                             <Card item={item} />
                         </Link>
                     ))}
+                    {(dataFiltered.length === 0) && (<div  className={styles.no_results}>No results</div>)}
                 </div>
             </div>
         </>

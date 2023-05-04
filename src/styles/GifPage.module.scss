@@ -24,6 +24,10 @@
     min-height: 1vh;
     padding: 2.5% 10%;   
 }
+.no_results{
+    font-size: 40px;
+    color: $--gainsborg;
+}
 @media (max-width: 471px){
     .search_container{
         margin: 20px 40px;
