@@ -27,7 +27,9 @@ export default function Footer() {
                         <li className= {styles.list}><Image src={mail} width={20} height={20} className={styles.icon}/> <a>business.nimh@outlook.com</a> </li>
                     </ul>
                 </div>
+                <p>©2022 Dakrfox</p>
             </div>
+            
         </div>
 
     );
