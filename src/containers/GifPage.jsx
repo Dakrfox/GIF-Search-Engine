@@ -5,15 +5,9 @@ import data from "../data.mjs";
 import Link from "next/link.js";
 import search_icon from "@icons/search-icon.svg";
 import Image from "next/image.js";
-import Disclaimer from "@components/Disclaimer.jsx";
 
 export default function GifPage() {
   const [inputValue, setInputValue] = useState("");
-  const [showDisclaminer, setShowDisclaminer] = useState(true);
-  setTimeout(() => {
-    setShowDisclaminer(false);
-  }, 8000);
-
   const handleSearchInput = (event) => {
     setInputValue(event.target.value);
   };
@@ -53,7 +47,6 @@ export default function GifPage() {
   }, []);
   return (
     <>
-      
       <div className={styles.search_container}>
         <input
           type="text"
